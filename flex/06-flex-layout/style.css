@@ -1,10 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 100%;
+  position: fixed;
+}
+
+.header {
+  top: 0;
+}
+
+.footer {
+  bottom: 0;
+  background-color:#eeeeee;
+}
+
+.left-links, .right-links {
+    display: flex;
+  ;
+}
+
+.left-links {
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.right-links {
+  align-items: flex-end;
+  padding-right: 10px;
+}
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex: 1;
 }
 
 img {
@@ -16,6 +59,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
+  
 }
 
 input {
@@ -24,4 +69,16 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
 }
